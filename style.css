@@ -1,0 +1,26 @@
+body {
+  font-family: 'Hachi Maru Pop', cursive;
+}
+h1 {
+  color: purple;
+}
+div {
+  color: blue;
+}
+button {
+  color: brown;
+  font-style: oblique;
+}
+#first {
+  color: red;
+}
+#buttoncat {
+  color: green;
+}
+#butsearch {
+  color: yellow;
+  font-style: oblique;
+  }
+* {
+  color: purple;
+}
