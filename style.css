@@ -1,26 +1,14 @@
-body {
+.logo {
   font-family: 'Hachi Maru Pop', cursive;
-}
-h1 {
-  color: purple;
-}
-div {
-  color: blue;
-}
-button {
-  color: brown;
-  font-style: oblique;
-}
-#first {
   color: red;
 }
-#buttoncat {
-  color: green;
+.main-content__title {
+  color: brown;
 }
-#butsearch {
-  color: yellow;
+.main-content__donations__button {
+  color: red;
   font-style: oblique;
-  }
-* {
-  color: purple;
+}
+.menu__main {
+  color: red;
 }
