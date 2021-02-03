@@ -1,14 +1,59 @@
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
   font-family: 'Hachi Maru Pop', cursive;
   color: red;
+  padding: 40px 0
 }
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  padding: 0 5px;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.image-content__image {
+  height: 200px;
+  width: 320px;
+}
+.main-content {
+  flex-direction: column;
+  width: 65%
+}
+
 .main-content__title {
+  display: flex;
+  justify-content: center;
   color: brown;
 }
-.main-content__donations__button {
-  color: red;
-  font-style: oblique;
+
+.main-content__subtitle {
+  display: flex;
+  justify-content: center;
 }
-.menu__main {
-  color: red;
+
+.main-content__donations {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end /* как ее опустить в конец страницы, я когда-нибудь узнаю точно*/
 }
