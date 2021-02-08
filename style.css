@@ -1,4 +1,6 @@
+
 .wrapper {
+  font-family: Helvetica;
   margin: auto;
   width: 80%;
 }
@@ -9,12 +11,34 @@
 }
 
 .logo {
-  font-family: 'Hachi Maru Pop', cursive;
-  color: red;
-  padding: 40px 0
+  position: relative;
+  padding: 40px 0;
+  padding-left: 44px;
+  font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
+}
+
+.logo__circle {
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: .7;
+}
+.logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
+}
+.logo__circle_color_dark-blue {
+  background: #0056EC;
 }
 
 .menu {
+  font-family: pt_serifbold_italic;
   display: flex;
   align-items: center;
 }
