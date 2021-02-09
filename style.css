@@ -18,7 +18,6 @@
 }
 
 .logo__circle {
-
   position: absolute;
   left: 0;
   top: 50%;
@@ -33,22 +32,51 @@
   top: 56%;
   background: #C8DBFB;
 }
+
 .logo__circle_color_dark-blue {
   background: #0056EC;
 }
 
 .menu {
-  font-family: pt_serifbold_italic;
   display: flex;
   align-items: center;
 }
 
 .menu__item {
-  padding: 0 5px;
+  position: relative;
+  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+  margin-right: 26px;
+  color: #000;
+  text-decoration: none;
+}
+
+.menu__item:after {
+ position: absolute;
+ left: 50%;
+ display: block;
+ content: '';
+ width: 0;
+ height: 3px;
+ background: #0056EC;
+ -webkit-transition: width .3s ease-in-out;
+ -moz--transition: width .3s ease-in-out;
+ transition: width .3s ease-in-out;
+ -webkit-transform:translateX(-50%);
+ -moz-transform:translateX(-50%);
+ transform:translateX(-50%);
+}
+
+.menu__item:hover {
+  color: #0056EC;
+}
+
+.menu__item:hover:after, .menu__item_active:after {
+ opacity: 1;
+ width: 100%;
 }
 
 .menu__item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .main-section {
@@ -56,10 +84,12 @@
   justify-content: space-between;
   align-items: stretch;
 }
+
 .image-content__image {
   height: 200px;
   width: 320px;
 }
+
 .main-content {
   flex-direction: column;
   width: 65%
@@ -74,10 +104,4 @@
 .main-content__subtitle {
   display: flex;
   justify-content: center;
-}
-
-.main-content__donations {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end /* как ее опустить в конец страницы, я когда-нибудь узнаю точно*/
 }
