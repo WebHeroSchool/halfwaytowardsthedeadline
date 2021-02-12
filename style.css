@@ -38,11 +38,13 @@
 .menu {
   display: flex;
   align-items: center;
+
 }
 
 .menu__item {
   position: relative;
   font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+  font-style: normal;
   margin-right: 26px;
   color: #000;
   text-decoration: none;
