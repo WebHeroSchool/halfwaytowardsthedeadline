@@ -1,3 +1,8 @@
+body {
+  margin: 0px;
+  font-family: 'pt_serif', sans-serif;
+}
+
 .wrapper {
   margin: auto;
   width: 80%;
@@ -10,20 +15,25 @@
 
 .logo {
   position: relative;
-  padding: 40px 0;
+  padding: 38px 0;
+  margin-left: 5px;
+  font: bold 24px/32px "pt_serifbold", arial, helvetica, sans-serif;
   padding-left: 44px;
-  font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
-}
+  width: 190px;
+  height: 35px;
+
+  }
 
 .logo__circle {
   position: absolute;
-  left: 0;
+  left: 0px;
   top: 50%;
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
   border-radius: 50%;
   opacity: .7;
+  border: dashed 1px red;
 }
 .logo__circle_color_blue {
   left: 8px;
@@ -38,7 +48,6 @@
 .menu {
   display: flex;
   align-items: center;
-
 }
 
 .menu__item {
@@ -79,14 +88,16 @@
   margin-right: 0;
 }
 
-.main {
-  padding: 0 63% 300px 0;
-  background: top right no-repeat url(img/mainImg.svg);
+.main{
+  margin-right: 14px;
+  margin-top: 70px;
+  padding: 72px 62% 200px 0;
+  background:top right no-repeat url(img/mainimg.svg);
 }
 
 .main__title {
   margin-bottom: 0 0 40px 0;
-  font: bold 66px/87px pt_serif, arial, helvetica, sans-serif;
+  font: bold 66px/87px pt_serifbold, arial, helvetica, sans-serif;
   width: 567px;
   height: 255px;
   left: calc(50% - 567px/2 - 481.5px);
@@ -100,7 +111,10 @@
 
 .main__subtitle {
  margin-bottom: 0 0 41px 0;
+ width: 455px;
+ height: 52px;
  font: 22px/26px Roboto, arial, helvetica, sans-serif;
+
 }
 
 .main__button {
