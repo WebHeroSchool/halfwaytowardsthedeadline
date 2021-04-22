@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   font-family: 'pt_serif', sans-serif;
+
 }
 .loading {
   position: absolute;
@@ -214,9 +215,15 @@ body {
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
+   all-anima
   -webkit-animation: scale 1s ease-in-out 1.25s;
   -moz-animation: scale 1s ease-in-out 1.25s;
   animation: scale 1s ease-in-out 1.25s;
+
+  -webkit-animation: scale 1s;
+  -moz-animation: scale 1s;
+  animation: scale 1s;
+
 }
 .main__button:hover {
   opacity: .8;
@@ -238,6 +245,7 @@ body {
     -moz-transform: scale(1);
   }
 }
+
 @-o-keyframes scale {
   from {
     transform: scale(0);
@@ -246,6 +254,8 @@ body {
     transform: scale(1);
   }
 }
+
+
 @keyframes scale {
   from {
     transform: scale(0);
