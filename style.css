@@ -3,10 +3,100 @@ body {
   font-family: 'pt_serif', sans-serif;
 
 }
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  transform-origin: center;
+  /* background: url(img/load.gif) center center/ 10% no-repeat fixed; */
+  background: url(img/load.gif);
+  margin-top: -100px;
+  margin-left: -100px;
+  -webkit-animation: load .3s ease-out 1.2s forwards;
+  -moz-animation: load .3s ease-out 1.2s forwards;
+  -o-animation: load .3s ease-out 1.2s forwards;
+  animation: load .3s ease-out 1.2s forwards;
+}
+
+@-webkit-keyframes scales {
+  from {
+    -webkit-transform: scaleY(0);
+  }
+  to {
+    -webkit-transform: scaleY(1);
+  }
+}
+@-moz-keyframes scales {
+  from {
+    -webkit-transform: scaleY(0);
+  }
+  to {
+    -webkit-transform: scaleY(1);
+  }
+}
+@-o-keyframes scales {
+  from {
+    -webkit-transform: scaleY(0);
+  }
+  to {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes scales {
+  from {
+    -webkit-transform: scaleY(0);
+  }
+  to {
+    -webkit-transform: scaleY(1);
+  }
+}
+@-webkit-keyframes load {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes load {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes load {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes load {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
 .wrapper {
   margin: auto;
   width: 80%;
+  -webkit-animation: scales .7s ease-out 1.3s forwards;
+  -moz-animation: scales .7s ease-out 1.3s forwards;
+  -o-animation: scales .7s ease-out 1.3s forwards;
+  animation: scales .7s ease-out 1.3s forwards;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  transform-origin: top center;
 }
 
 .header {
@@ -113,7 +203,6 @@ body {
   font: 22px/26px Roboto, arial, helvetica, sans-serif;
   width: 455px;
   height: 52px;
-
 }
 
 .main__button {
@@ -126,9 +215,15 @@ body {
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
+   all-anima
+  -webkit-animation: scale 1s ease-in-out 1.25s;
+  -moz-animation: scale 1s ease-in-out 1.25s;
+  animation: scale 1s ease-in-out 1.25s;
+
   -webkit-animation: scale 1s;
   -moz-animation: scale 1s;
   animation: scale 1s;
+
 }
 .main__button:hover {
   opacity: .8;
@@ -150,6 +245,17 @@ body {
     -moz-transform: scale(1);
   }
 }
+
+@-o-keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
 @keyframes scale {
   from {
     transform: scale(0);
