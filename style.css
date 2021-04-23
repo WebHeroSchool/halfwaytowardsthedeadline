@@ -184,7 +184,7 @@ body {
 .main{
   margin-right: 5px;
   padding: 150px 63% 170px 3px;
-  background:top right no-repeat url(../img/mainimg.svg);
+  background: url(img/mainimg.svg) top right no-repeat;
   background-size: 50.3%;
   background-position-y: 131px;
 }
