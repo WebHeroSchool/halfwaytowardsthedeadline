@@ -184,7 +184,7 @@ body {
 .main{
   margin-right: 5px;
   padding: 150px 63% 170px 3px;
-  background:top right no-repeat url(img/mainimg.svg);
+  background:top right no-repeat url(../img/mainimg.svg);
   background-size: 50.3%;
   background-position-y: 131px;
 }
@@ -215,7 +215,6 @@ body {
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
-   all-anima
   -webkit-animation: scale 1s ease-in-out 1.25s;
   -moz-animation: scale 1s ease-in-out 1.25s;
   animation: scale 1s ease-in-out 1.25s;
